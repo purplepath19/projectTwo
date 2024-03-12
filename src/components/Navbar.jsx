@@ -32,16 +32,16 @@ const Navbar = () => {
     
 
           <li className="navbar-item">
-            <Link to="/user" className="nav-link"> Create User </Link>
+            <Link to="/create-user" className="nav-link"> Create User </Link>
           </li>
 
           <li className="navbar-item">
             <Link to="/about" className="nav-link"> About </Link>
           </li>
 
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
             <Link to="/apis" className="nav-link"> APIS </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       </div>

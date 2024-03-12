@@ -7,12 +7,13 @@ import Home from "./components/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BoredAPI from "./components/BoredAPI";
 import CoffeeAPI from "./components/CoffeeAPI";
-import CatAPI from "./components/TheCatAPI";
+import CatAPI from "./components/CatAPI";
 import Navbar from "./components/Navbar";
 import UserProfile from "./pages/UserProfile";
 import AboutPage from "./components/About";
 import Menu from "./components/Menu";
-import DictionaryAPI from "./components/Dictionary";
+import DictionaryAPI from "./components/DictionaryAPI";
+import { ApiLanding } from "./pages/ApiLanding";
 
 function App() {
   // JSX
@@ -34,11 +35,12 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} /> 
-        <Route path="/user" element={<CreateUser />} />
-        <Route path="/userprofile" element={<UserProfile />} />
-        <Route path="/bored" element={<BoredAPI/>} />
-        <Route path="/cats" element={<CatAPI/>} /> 
+        <Route path="/create-user" element={<CreateUser />} />
+        <Route path="/user-profile" element={<UserProfile />} />
+        {/* <Route path="/bored" element={<BoredAPI/>} />
+        <Route path="/cats" element={<CatAPI/>} />  */}
         <Route path="/dictionary" element={<DictionaryAPI />} /> 
+        <Route path="/apis/:api" element={<ApiLanding />} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

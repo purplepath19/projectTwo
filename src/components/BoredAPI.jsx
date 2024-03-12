@@ -19,7 +19,6 @@ const BoredAPI = () => {
 
   return (
     <div>
-      <h3>Bored API: Let's find something to do</h3>
       {data ? (
         <div>
           <p>Activity: {data.activity}</p>

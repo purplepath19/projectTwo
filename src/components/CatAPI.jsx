@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios"; 
 
 
-const CatAPI = ()=> {
+const CatAPI = ({ isPreview })=> {
 
     const [data, setData] =  useState(null);
   
@@ -23,11 +23,9 @@ const CatAPI = ()=> {
 
  return (
     <div>
-    <h3>Cat API: Random cat picture</h3>
     {data ? (
       <div>
         <p>Random cat image: 
-            <div></div>
             <img src={data[0].url} className="cat-image" alt="Random cat" /></p>
       </div>
     ) : (
