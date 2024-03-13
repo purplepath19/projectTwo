@@ -103,6 +103,7 @@ function CreateUser() {
         <Link to="/apis/guardian" className="guardian">
           Guardian
         </Link>
+      
       </div>
     </div>
   );
@@ -116,7 +117,7 @@ export default CreateUser;
  * @todo
  *  create admin page
  *  make GET request on page load with useEffect to user resource
- * https://crudcrud.com/api/8c0aff5cc7544c858500321263df310d/user
+ * https://crudcrud.com/api/8c0aff5cc7544c858500321263df310d/users
  * print all users in user resource with a delete button on each
  * delete should remove the resource using crudcrud delete action
  * after successfuk delete, reGET the user resources and reprint 

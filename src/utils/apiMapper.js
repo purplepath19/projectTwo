@@ -1,6 +1,7 @@
 import BoredAPI from "../components/BoredAPI";
 import CatAPI from "../components/CatAPI";
 import GuardianAPI from "../components/GuardianAPI";
+import UserAdmin from "../components/UserAdmin";
 
 
 export const apiMap = {
@@ -22,4 +23,11 @@ export const apiMap = {
         description: "Search for news",
         label: "Guardian"
     },
+
+    // useradmin: {
+    //     component: UserAdmin,
+    //     title: "user admin",
+    //     description: "Admin",
+    //     label: "Guardian"
+    // },
 }

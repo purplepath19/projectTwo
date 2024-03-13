@@ -14,6 +14,7 @@ import AboutPage from "./components/About";
 import Menu from "./components/Menu";
 import DictionaryAPI from "./components/DictionaryAPI";
 import { ApiLanding } from "./pages/ApiLanding";
+import UserAdmin from "./components/UserAdmin";
 
 function App() {
   // JSX
@@ -39,6 +40,7 @@ function App() {
         <Route path="/user-profile" element={<UserProfile />} />
         {/* <Route path="/bored" element={<BoredAPI/>} />
         <Route path="/cats" element={<CatAPI/>} />  */}
+        <Route path="useradmin" element={<UserAdmin />} />
         <Route path="/dictionary" element={<DictionaryAPI />} /> 
         <Route path="/apis/:api" element={<ApiLanding />} /> 
         <Route path="*" element={<NotFound />} />

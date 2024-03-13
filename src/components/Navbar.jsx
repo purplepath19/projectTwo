@@ -12,6 +12,9 @@ const Navbar = () => {
     // .navbar class followed by responsive collapsing class: .navbar-expand
     <nav className="navbar navbar-expand-sm bg-light navbar-light">
       <Link to="/menu" className="navbar-brand"> Menu </Link>
+      <Link to="/useradmin" className="useradmin">
+          User Admin 
+        </Link>
     
 
       <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
