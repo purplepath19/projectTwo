@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
 import { apiMap } from "../utils/apiMapper";
 import axios from "axios";
+import { USER_PATH } from "../utils/constants";
 
 const UserProfile = () => {
   const { user, setUser } = useContext(UserContext);
@@ -23,11 +24,11 @@ const UserProfile = () => {
     event.preventDefault();
     try {
       const response = await axios.put(
-        `https://crudcrud.com/api/8c0aff5cc7544c858500321263df310d/user/${user._id}`,
+        `${import.meta.env.VITE_CRUDCRUD_ENDPOINT}${USER_PATH}/${user._id}`,
         { username: user.username, favorites }
       );
       const resource = await axios.get(
-        `https://crudcrud.com/api/8c0aff5cc7544c858500321263df310d/user/${user._id}`
+        `${import.meta.env.VITE_CRUDCRUD_ENDPOINT}${USER_PATH}/${user._id}`
       );
 
       setUser(resource.data);
@@ -58,7 +59,7 @@ const UserProfile = () => {
           //     description: "Random things to do when you get bored.",
           //     label: "Bored"
           // }]]
-
+{/* <button onClick={() => handleDelete(_id)>delete</button> */}
           return (
             <div key={key}>
               <label>
@@ -67,6 +68,7 @@ const UserProfile = () => {
                   type="checkbox"
                   name="option"
                   value={key}
+                  // checked={favorites.includes(key)}
                   checked={favorites.some((item) => item === key)}
                 />
                 {value.label}
@@ -76,9 +78,7 @@ const UserProfile = () => {
             </div>
           );
         })}
-        <button className="save-button" type="submit">
-          SAVE
-        </button>
+        <button className="save-button" type="submit">Save</button>
       </form>
       <ul></ul>
     </div>

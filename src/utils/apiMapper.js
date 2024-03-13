@@ -18,8 +18,8 @@ export const apiMap = {
     },
     guardian: {
         component: GuardianAPI,
-        title: "Welcome to the Guardian API.",
-        description: "Random coffe things.",
-        label: "Coffee"
+        title: "Welcome to The Guardian API.",
+        description: "Search for news",
+        label: "Guardian"
     },
 }

@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "../context/UserContext";
 import { apiMap } from "../utils/apiMapper";
+import { USER_PATH } from "../utils/constants";
 function CreateUser() {
   const [loading, setLoading] = useState(false);
   const { user, setUser } = useContext(UserContext);
@@ -37,7 +38,7 @@ function CreateUser() {
       };
       // Use CrudCrud
       const response = await axios.post(
-        "https://crudcrud.com/api/8c0aff5cc7544c858500321263df310d/user",
+        `${import.meta.env.VITE_CRUDCRUD_ENDPOINT}${USER_PATH}`,
         postData
       );
       console.log("crudcrud create user response", response);
@@ -67,19 +68,7 @@ function CreateUser() {
             placeholder="@username"
           />
           {Object.entries(apiMap).map(([key, value]) => {
-            // [["cat", {
-            //     component: CatAPI,
-            //     title: "Welcome to the Cat API.",
-            //     description: "Random cat photos on click!",
-            //     label: "Cat"
-            // }],
-
-            // ["bored", {
-            //     component: BoredAPI,
-            //     title: "Welcome to the Bored API.",
-            //     description: "Random things to do when you get bored.",
-            //     label: "Bored"
-            // }]]
+      
 
             return (
               <div key={key}>
@@ -120,3 +109,18 @@ function CreateUser() {
 }
 
 export default CreateUser;
+
+
+
+/**
+ * @todo
+ *  create admin page
+ *  make GET request on page load with useEffect to user resource
+ * https://crudcrud.com/api/8c0aff5cc7544c858500321263df310d/user
+ * print all users in user resource with a delete button on each
+ * delete should remove the resource using crudcrud delete action
+ * after successfuk delete, reGET the user resources and reprint 
+ * updating in react.
+ * 
+ * 
+ */
