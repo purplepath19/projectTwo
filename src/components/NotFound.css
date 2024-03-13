@@ -8,5 +8,11 @@
 }
  
 .header-1 {
-    font-size:70px;
+    font-size:150px;
+    color:rgb(231, 198, 231);
+}
+
+.not-found-image{
+    width: 200px;
+    height: 100px;
 }

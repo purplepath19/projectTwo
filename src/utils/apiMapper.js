@@ -1,5 +1,7 @@
 import BoredAPI from "../components/BoredAPI";
 import CatAPI from "../components/CatAPI";
+import GuardianAPI from "../components/GuardianAPI";
+
 
 export const apiMap = {
     cat: {
@@ -13,5 +15,11 @@ export const apiMap = {
         title: "Welcome to the Bored API.",
         description: "Random things to do when you get bored.",
         label: "Bored"
-    }
+    },
+    coffee: {
+        component: BoredAPI,
+        title: "Welcome to the Guardian API.",
+        description: "Random coffe things.",
+        label: "Coffee"
+    },
 }

@@ -6,10 +6,10 @@ import { UserContext } from "../context/UserContext";
 import { apiMap } from "../utils/apiMapper";
 function CreateUser() {
   const [loading, setLoading] = useState(false);
+  const { user, setUser } = useContext(UserContext);
   const [username, setUsername] = useState("");
   const [favorites, setFavorites] = useState([]);
   const navigate = useNavigate();
-  const { setUser } = useContext(UserContext);
   const handleInputChange = (event) => {
     setUsername(event.target.value);
   };
@@ -32,7 +32,6 @@ function CreateUser() {
     try {
       // Data to be sent?
       const postData = {
-        // make first and last names state vars
         username: username,
         favorites: favorites,
       };
@@ -60,12 +59,12 @@ function CreateUser() {
     <div className="parent-container">
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <h3 className="hi-container"> HI THERE </h3>
+          <h3 className="hi-container"> Hi there </h3>
           <input
             className="input"
             onChange={handleInputChange}
             type="text"
-            placeholder="username here"
+            placeholder="@username"
           />
           {Object.entries(apiMap).map(([key, value]) => {
             // [["cat", {
@@ -90,6 +89,7 @@ function CreateUser() {
                     type="checkbox"
                     name="option"
                     value={key}
+                    checked={favorites.some((item) => item === key)}
                   />
                   {value.label}
                 </label>
@@ -110,6 +110,9 @@ function CreateUser() {
         </Link>
         <Link to="/apis/cat" className="cats">
           Cats
+        </Link>
+        <Link to="/apis/guardian" className="guardian">
+          Guardian
         </Link>
       </div>
     </div>
