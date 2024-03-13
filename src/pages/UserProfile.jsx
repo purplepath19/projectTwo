@@ -38,10 +38,10 @@ const UserProfile = () => {
   };
 
   return (
-    <div>
-      <h1>Welcome {user?.username}</h1>
-      <p>favorites {user.favorites}</p>
-      <p>Select APIS:</p>
+    <div className="api-styles-container">
+      <h1 className="header">Welcome {user?.username}</h1>
+      <p className="favorites">favorites: {user.favorites}</p>
+      <p className="select">Select APIS:</p>
 
       {/* form */}
       <form onSubmit={saveClickHandler}>

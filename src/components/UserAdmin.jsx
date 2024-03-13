@@ -38,16 +38,16 @@ const UserAdmin = () => {
 
   return (
     <div>
-      <h1> User Admin: </h1>
+      <h1 className="user-admin"> User Admin: </h1>
 
       {/* DATA to be rendered must be a list - map() */}
       {data && (
         <ul>
           {data.map((user) => {
             return (
-              <li key={user._id}>
+              <li className="list-items" key={user._id}>
                 <p> User: {user.username} </p>
-                <button onClick={() => deleteData(user._id)}> Delete </button>
+                <button className="button" onClick={() => deleteData(user._id)}> Delete </button>
               </li>
             );
           })}

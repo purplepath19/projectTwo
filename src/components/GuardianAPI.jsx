@@ -36,51 +36,39 @@ const GuardianAPI = () => {
 
   return (
     <>
-    <div>
-      {/* To be rendered on page */}
-      <label htmlFor="queryInput"> What news do you want so see today? </label>
+      <div>
+        {/* To be rendered on page */}
+        <label className="news-label" htmlFor="queryInput">
+         
+        </label>
 
-      {/* Search Input */}
-      <input
-        type="text"
-        id="queryInput"
-        value={inputValue}
-        onChange={handleInputChange}
-      />
+        {/* Search Input */}
+        <input
+          className="search-input"
+          type="text"
+          id="queryInput"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Maybe search the news?"
+        />
 
-      {/* Search button */}
-      <button className="search-button" onClick={handleSearch}>
-        Search
-      </button>
-    </div>
+        {/* Search button */}
+        <button className="search-button" onClick={handleSearch}>
+         Search
+        </button>
+      </div>
 
-    {/* // Display data: MAP and a <li> element  */}
-
-{
-
-data && data.results.length > 0 && 
-
-<>
-{
-data.results.map((result)=> {
-  return (
-
-    <ArticlePreview article={result.fields}/> 
-
-
-  )
-})
-
-}
-</>
-
-
-}
-
-
-
-</>
-
+      {/* // Display data: MAP and a <li> element  */}
+      <div className="main-container">
+      {data && data.results.length > 0 && (
+        <>
+          {data.results.map((result) => {
+            return <ArticlePreview article={result.fields} />;
+          })}
+        </>
+      )}
+      </div>
+    </>
   );
 };
 

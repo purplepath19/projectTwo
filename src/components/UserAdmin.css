@@ -1,0 +1,17 @@
+.user-admin{
+    font-family: "Sue Ellen Francisco";
+    font-size:50px;
+}
+
+.list-items{
+    font-family: "Sue Ellen Francisco";
+    font-size:30px;
+    list-style-type: none;
+}
+.button{
+margin-top:40px;
+box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
+font-size: 30px;
+border-radius: 20px;
+font-family: "Sue Ellen Francisco";
+}

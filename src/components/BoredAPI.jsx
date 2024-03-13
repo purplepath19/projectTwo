@@ -21,7 +21,7 @@ const BoredAPI = () => {
     <div>
       {data ? (
         <div>
-          <p>Activity: {data.activity}</p>
+          <p className="activity">Do this: {data.activity}</p>
         </div>
       ) : (
         <p>Loading...</p>

@@ -1,0 +1,32 @@
+*{
+    text-align: center;
+}
+
+.header{ 
+    font-size: 100px;
+}
+
+.select{
+    font-size: 50px;
+}
+
+.favorites{
+    font-size: 20px;
+}
+.save-button{
+    margin-top: 40px;
+    box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: 'Sue Ellen Francisco';
+    width: 100px;
+}
+
+.save-button:hover{
+    color:pink; 
+}
+
+.api-styles-container{
+    margin-top: 200px;
+    font-family: "Sue Ellen Francisco";
+}

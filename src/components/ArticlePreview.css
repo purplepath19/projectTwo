@@ -1,0 +1,47 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 700px;
+    /* align-content: flex-start;  */
+    width: 100%;
+    flex: 1 50%;
+    justify-content: space-between;
+}
+
+.news-cards{
+    margin-top: 100px;
+    /* height:500px; */
+    background-color: #fcfcfc;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    border: 4px solid #000;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    
+}
+
+.article-headline {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "EB Garamond";
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+.link-base {
+    text-decoration: none;
+}
+
+.link-base img{
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    height: 600px;
+    object-fit: cover;
+}
+
+.link-base:hover img {
+    opacity: 0.3;
+}

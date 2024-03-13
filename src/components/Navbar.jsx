@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-sm bg-light navbar-light">
       <Link to="/menu" className="navbar-brand"> Menu </Link>
       <Link to="/useradmin" className="useradmin">
-          User Admin 
+          I save your data 
         </Link>
     
 

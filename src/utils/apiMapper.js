@@ -19,15 +19,10 @@ export const apiMap = {
     },
     guardian: {
         component: GuardianAPI,
-        title: "Welcome to The Guardian API.",
-        description: "Search for news",
+        title: "Welcome to The Guardian API!",
+        description: "",
         label: "Guardian"
     },
 
-    // useradmin: {
-    //     component: UserAdmin,
-    //     title: "user admin",
-    //     description: "Admin",
-    //     label: "Guardian"
-    // },
+
 }
