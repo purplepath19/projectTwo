@@ -16,8 +16,8 @@ export const apiMap = {
         description: "Random things to do when you get bored.",
         label: "Bored"
     },
-    coffee: {
-        component: BoredAPI,
+    guardian: {
+        component: GuardianAPI,
         title: "Welcome to the Guardian API.",
         description: "Random coffe things.",
         label: "Coffee"
