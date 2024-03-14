@@ -27,7 +27,7 @@
   position: relative;
   letter-spacing: 0.6em;
   color: #282828;
-  padding: 5px 24px 5px 0;
+  padding: 5px 24px 5px 0
 }
 
 .home-image{
@@ -51,5 +51,9 @@
 .api-image{
   width: 50px;
   border-radius: 30px;
+}
+
+.about-image:hover{
+width: 48px;
 }
 

@@ -8,7 +8,7 @@ export const apiMap = {
     cat: {
         component: CatAPI,
         title: "Welcome to the Cat API.",
-        description: "Random cat photos on click!",
+        description: "Random cat photos for a mood boost",
         label: "Cat"
     },
     bored: {

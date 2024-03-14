@@ -17,11 +17,11 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-sm bg-light navbar-light">
 {/* Home Icon Link */}
       <Link to="/" className="navbar-brand">
-      <img src={myImage} className="home-image" alt="image-icon" /> 
+      <img src={myImage} className="about-image" alt="image-icon" /> 
        </Link>
        {/* User Admin Icon Link */}
       <Link to="/useradmin" className="useradmin">
-           <img src={adminImg} className="admin-image" alt="image-icon" /> 
+           <img src={adminImg} className="about-image" alt="image-icon" /> 
         </Link>
     
 
@@ -40,7 +40,7 @@ const Navbar = () => {
 {/* User Icon Link */}
           <li className="navbar-item">
             <Link to="/create-user" className="nav-link"> 
-            <img src={Image} className="user-image" alt="image-icon" /> 
+            <img src={Image} className="about-image" alt="image-icon" /> 
              </Link>
           </li>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
           {/* API Icon Link */}
           <li className="navbar-item">
             <Link to="/api-links" className="nav-link"> 
-            <img src={apiImg} className="api-image" alt="image-icon" /> 
+            <img src={apiImg} className="about-image" alt="image-icon" /> 
             </Link>
           </li>
 

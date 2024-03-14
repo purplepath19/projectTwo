@@ -60,12 +60,12 @@ function CreateUser() {
     <div className="parent-container">
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <h3 className="hi-container"> Get creative with your username </h3>
+          <h3 className="hi-container"> Login </h3>
           <input
             className="input"
             onChange={handleInputChange}
             type="text"
-            placeholder="@username"
+            placeholder="@USERNAME"
           />
           {Object.entries(apiMap).map(([key, value]) => {
       
