@@ -1,39 +1,62 @@
-.api-styles-container{
-    text-align: center;
-    margin-top: 20px;
-    font-family: "EB Garamond";
+.api-styles-container {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "EB Garamond";
 }
 
-.header{ 
-    font-size: 80px;
-    color:white;
+.header {
+  font-size: 80px;
+  color: white;
 }
 
-.select{
-    font-size: 30px;
-    color:white;
+.select {
+  font-size: 30px;
+  color: white;
 }
 
-.favorites{
-    color:white;
-    font-size: 20px;
+.favorites {
+  color: white;
+  font-size: 20px;
 }
-.save-button{
-    margin-top: 40px;
-    box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
-    font-size: 15px;
-    border-radius: 20px;
-    font-family: 'EB Garamond';
-    width: 100px;
-    
+.save-button {
+  margin-top: 20px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 8px;
+
+  box-shadow: 2px 2px 7px #38d39f70;
+
+  background: #333b39;
+  color: rgba(255, 255, 255, 0.8);
+
+  width: 80px;
+
+  transition: all 1s;
 }
 
-.save-button:hover{
-    color:white;
-    background-color: black; 
+.save-button:hover {
+  color: white;
+  background-color: black;
 }
 
+/* Label class */
+.check {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 1.2;
+  box-sizing: content-box;
+}
 
+/* Checkbox input */
+.checkbox-input {
+  margin: 10px;
+  color:black;
+}
 
 /* <div className="api-styles-container">
 <h1 className="header">Welcome {user?.username}</h1>

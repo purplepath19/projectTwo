@@ -18,7 +18,7 @@
   justify-content: center;
   flex-direction: column;
   background: #1f1f1f;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+  box-shadow: 5px 5px 10px rgba(255, 254, 254, 0.199);
   /* text-align: center;
     margin-top: 10px;
     height: 500px;
@@ -36,7 +36,7 @@
 }
 
 .input {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(177, 177, 177, 0.3);
   border: none;
   border-bottom: solid rgb(143, 143, 143) 1px;
@@ -55,9 +55,6 @@
   font-size: 15px; */
 }
 
-.checkbox {
-  background-color: black;
-}
 
 .submit-button {
   margin-top: 20px;
@@ -91,4 +88,10 @@
 .api-container {
   display: flex;
   flex-direction: column;
+}
+
+
+.check {
+  color:white;
+  font-family: "EB Garamond";
 }

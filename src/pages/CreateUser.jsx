@@ -72,7 +72,7 @@ function CreateUser() {
 
             return (
               <div key={key}>
-                <label>
+                <label className="check">
                   <input
                     onChange={handleCheckboxChange}
                     type="checkbox"

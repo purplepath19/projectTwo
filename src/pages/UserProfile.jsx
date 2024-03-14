@@ -62,12 +62,12 @@ const UserProfile = () => {
 {/* <button onClick={() => handleDelete(_id)>delete</button> */}
           return (
             <div key={key}>
-              <label>
+              <label className="check">
                 <input
                   onChange={handleCheckboxChange}
                   type="checkbox"
                   name="option"
-                  className="checkbox"
+                  className="checkbox-input"
                   value={key}
                   // checked={favorites.includes(key)}
                   checked={favorites.some((item) => item === key)}
