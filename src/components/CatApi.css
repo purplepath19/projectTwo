@@ -1,4 +1,17 @@
-.cat-image{
-    width: 200px;
-    height: 200px;
+.cat-container{
+  background-color: rgb(230, 230, 175);
+}
+
+.cat-image {
+  text-align: center;
+  width: 400x;
+  height: 400px;
+  margin-left: 30px;
+  padding:10px;
+}
+
+.cat-message {
+  color:rgb(19, 1, 1);
+  font-family: "Sue Ellen Francisco";
+  font-size: 60px;
 }

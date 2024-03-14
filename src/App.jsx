@@ -15,6 +15,7 @@ import Menu from "./components/Menu";
 import DictionaryAPI from "./components/DictionaryAPI";
 import { ApiLanding } from "./pages/ApiLanding";
 import UserAdmin from "./components/UserAdmin";
+import APILinks from "./components/APILinks";
 
 function App() {
   // JSX
@@ -44,6 +45,9 @@ function App() {
         <Route path="/dictionary" element={<DictionaryAPI />} /> 
         <Route path="/apis/:api" element={<ApiLanding />} /> 
         <Route path="*" element={<NotFound />} />
+
+        <Route path="/api-links" element={<APILinks />} /> 
+        
       </Routes>
     </BrowserRouter>
   );

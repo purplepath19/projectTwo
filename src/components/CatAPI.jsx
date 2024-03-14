@@ -23,9 +23,9 @@ const CatAPI = ({ isPreview }) => {
   return (
     <div>
       {data ? (
-        <div>
-          <p>
-            Random cat image:
+        <div className="cat-container">
+          <p className="cat-message">
+           Literally just fetches a random cat image. 
             <img src={data[0].url} className="cat-image" alt="Random cat" />
           </p>
         </div>

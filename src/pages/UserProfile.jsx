@@ -39,10 +39,10 @@ const UserProfile = () => {
 
   return (
     <div className="api-styles-container">
-      <h1 className="header">Welcome {user?.username}</h1>
-      <p className="favorites">favorites: {user.favorites}</p>
-      <p className="select">Select APIS:</p>
-
+      <h1 className="header">Welcome, {user?.username} !</h1>
+    
+      <p className="select">Select an API:</p>
+    
       {/* form */}
       <form onSubmit={saveClickHandler}>
         {Object.entries(apiMap).map(([key, value]) => {
@@ -67,6 +67,7 @@ const UserProfile = () => {
                   onChange={handleCheckboxChange}
                   type="checkbox"
                   name="option"
+                  className="checkbox"
                   value={key}
                   // checked={favorites.includes(key)}
                   checked={favorites.some((item) => item === key)}
@@ -79,6 +80,7 @@ const UserProfile = () => {
           );
         })}
         <button className="save-button" type="submit">Save</button>
+        <p className="favorites">I'll save your favorites here: {user.favorites}</p>
       </form>
       <ul></ul>
     </div>

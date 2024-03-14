@@ -1,9 +1,7 @@
-export default function Home () {
-
-    return (
-        <div className="home"> Home.  
-        <p> </p>
-        </div> 
-        
-    )
+export default function Home() {
+  return (
+    <div>
+      <div className="home"> Home</div>
+    </div>
+  );
 }

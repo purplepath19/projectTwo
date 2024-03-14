@@ -1,5 +1,17 @@
+body {
+    background-image: url(../assets/woman.png);
+    background-size: cover;
+   
+}
+
 .home {
+    display:flex;
     text-align: center;
-    font-family: "EB Garamo";
-    font-size: 100px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    font-family: "EB Garamond";
+    font-size: 50px;
+    background-color:transparent;
+    color:white;
+    
 }

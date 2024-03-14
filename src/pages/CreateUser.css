@@ -10,33 +10,43 @@
     margin-top: 10px;
     height: 500px;
     width: 800px;
-    background-color: #fcfcfc;
+    background-color: gray;
     border-radius: 20px;
     padding: 20px 50px 40px;
     box-shadow: 1px 4px 10px 1px #aaa;
-    font-family: 'Sue Ellen Francisco';
+    font-family: 'EB Garamond';
 }
 .hi-container{
-    font-size:50px;
+    font-size:20px;
+    color:white;
 }
 
 .input{
     margin-top: 30px;
     border:none; 
     outline:none; 
-    border-bottom: 2px solid black;
-    font-size:30px;
-}
-
-.button{
-    margin-top:40px;
-    box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
-    font-size: 30px;
     border-radius: 20px;
+    border-bottom: 2px solid black;
+    font-size:15px;
 }
 
-.button:hover {
-    color:pink;
+.checkbox {
+    background-color: black;
+}
+
+.submit-button {
+    margin-top:40px;
+    background-color: white;
+    color:black;
+    box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
+    font-size: 15px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.submit-button:hover {
+    color:white;
+    background-color: black;
 }
 
 .api-container{
@@ -44,7 +54,4 @@
     flex-direction: column;
 }
 
-.fave-star{
-    padding:10px;
-}
 

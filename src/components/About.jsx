@@ -2,16 +2,15 @@ export default function AboutPage() {
   return (
     <div className="about-container">
       <p className="about-content">
-        Welcome to the Funny API App, a project created for the sole purpose of
-        providing users with a daily dose of laughter and amusement. This app
-        fetches random funny APIs for you to click on and enjoy hilarious
-        content. Made for educational purpose and for the sole purpose of practicing
-        how to fetch APIS.
-
+        Welcome to my API App, a project created for the sole purpose of
+        providing users with a daily dose of amusement while I practice my newly acquired skills of fetching data from 
+        an API.
+        
+  
         
       </p>
 
-      <h3 className="about">About.</h3>
+      <h2 className="about">About.</h2>
     </div>
   );
 }

@@ -1,8 +1,10 @@
 .navbar {
-  background-image: url(../assets/pastel.png);
+  background-image: url(../assets/nav.png);
   /* position: sticky;
   top: 0;
   z-index: 1000; */
+  font-family: "Sue Ellen Francisco";
+  font-size:30px;
 }
 
 .navbar-item {
@@ -12,6 +14,9 @@
   
 }
 
+.navbar-item:hover{
+  font-weight: bold;
+}
 
 .nav-link{
   display:none;
@@ -20,11 +25,31 @@
 .navbar-brand {
   display: inline-block;
   position: relative;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.6em;
   color: #282828;
-  z-index: 0;
   padding: 5px 24px 5px 0;
+}
+
+.home-image{
+  width: 50px;
+  border-radius: 30px;
+}
+.user-image{
+  width: 50px;
+  border-radius: 30px;
+}
+
+.about-image{
+  width: 50px;
+  border-radius: 30px;
+}
+.admin-image{
+  width: 50px;
+  border-radius: 30px;
+}
+
+.api-image{
+  width: 50px;
+  border-radius: 30px;
 }
 

@@ -60,7 +60,7 @@ function CreateUser() {
     <div className="parent-container">
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <h3 className="hi-container"> Hi there </h3>
+          <h3 className="hi-container"> Get creative with your username </h3>
           <input
             className="input"
             onChange={handleInputChange}
@@ -76,6 +76,7 @@ function CreateUser() {
                   <input
                     onChange={handleCheckboxChange}
                     type="checkbox"
+                    className="checkbox"
                     name="option"
                     value={key}
                     checked={favorites.some((item) => item === key)}
@@ -86,14 +87,14 @@ function CreateUser() {
             )
           })}
 
-          <button disabled={username.length < 2} className="button" type="submit">
+          <button disabled={username.length < 2} className="submit-button" type="submit">
             Submit
           </button>
         </form>
       </div>
 
       {/* APIS */}
-      <div className="api-container">
+      {/* <div className="api-container">
         <Link to="/apis/bored" className="bored">
           Bored
         </Link>
@@ -103,8 +104,7 @@ function CreateUser() {
         <Link to="/apis/guardian" className="guardian">
           Guardian
         </Link>
-      
-      </div>
+      </div> */}
     </div>
   );
 }

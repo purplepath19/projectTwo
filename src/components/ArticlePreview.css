@@ -5,8 +5,10 @@
     min-height: 700px;
     /* align-content: flex-start;  */
     width: 100%;
-    flex: 1 50%;
     justify-content: space-between;
+    gap: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .news-cards{
@@ -18,7 +20,7 @@
     background-color: black;
     color:white;
     border-radius: 5px;
-    
+    flex: 1 48%;
 }
 
 .article-headline {

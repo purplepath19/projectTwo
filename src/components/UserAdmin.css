@@ -1,17 +1,26 @@
-.user-admin{
-    font-family: "Sue Ellen Francisco";
-    font-size:50px;
+.user-admin {
+  text-align: center;
+  font-family: "EB Garamond";
+  color: white;
+  font-size: 50px;
 }
 
-.list-items{
-    font-family: "Sue Ellen Francisco";
-    font-size:30px;
-    list-style-type: none;
+.list-items {
+  text-align: center;
+  color: white;
+  font-family: "EB Garamond";
+  font-size: 15px;
+  list-style-type: none;
 }
-.button{
-margin-top:40px;
-box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
-font-size: 30px;
-border-radius: 20px;
-font-family: "Sue Ellen Francisco";
+.button {
+  margin-top: 5px;
+  box-shadow: 0 7px 0 -3px rgba(0, 0, 0, 1);
+  font-size: 12px;
+  border-radius: 20px;
+  font-family: "EB Garamond";
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
 }

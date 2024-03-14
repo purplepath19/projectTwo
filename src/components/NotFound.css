@@ -5,11 +5,13 @@
 
 .not-found{
     text-align: center;
+    font-family: "Sue Ellen Francisco";
 }
  
 .header-1 {
     font-size:150px;
     color:rgb(231, 198, 231);
+    font-family: "Sue Ellen Francisco";
 }
 
 .not-found-image{

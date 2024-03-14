@@ -38,7 +38,7 @@ const UserAdmin = () => {
 
   return (
     <div>
-      <h1 className="user-admin"> User Admin: </h1>
+      <h1 className="user-admin"> User log: </h1>
 
       {/* DATA to be rendered must be a list - map() */}
       {data && (
@@ -47,7 +47,7 @@ const UserAdmin = () => {
             return (
               <li className="list-items" key={user._id}>
                 <p> User: {user.username} </p>
-                <button className="button" onClick={() => deleteData(user._id)}> Delete </button>
+                <button className="button" onClick={() => deleteData(user._id)}> X </button>
               </li>
             );
           })}

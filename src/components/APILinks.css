@@ -1,0 +1,41 @@
+.api-container {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.bored {
+  text-decoration: none;
+  color: white;
+}
+
+.cats {
+  text-decoration: none;
+  color: white;
+}
+
+.guardian {
+  text-decoration: none;
+  color: white;
+}
+
+.bored:hover {
+  background-color: red;
+  color: black;
+}
+
+.cats:hover {
+  background-color: red;
+  color: black;
+}
+
+.guardian:hover {
+  background-color: red;
+  color: black;
+}
+
+.api-image{
+    margin-left: 10px;
+    padding: 5px;
+}
