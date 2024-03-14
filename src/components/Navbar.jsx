@@ -39,21 +39,21 @@ const Navbar = () => {
     
 {/* User Icon Link */}
           <li className="navbar-item">
-            <Link to="/create-user" className="nav-link"> 
+            <Link to="/create-user"> 
             <img src={Image} className="about-image" alt="image-icon" /> 
              </Link>
           </li>
 
 {/* About Icon Link */}
           <li className="navbar-item">
-            <Link to="/about" className="nav-link"> 
+            <Link to="/about"> 
             <img src={aboutImg} className="about-image" alt="image-icon" /> 
             </Link>
           </li>
 
-          {/* API Icon Link */}
+  {/* API Icon Link */}
           <li className="navbar-item">
-            <Link to="/api-links" className="nav-link"> 
+            <Link to="/api-links" > 
             <img src={apiImg} className="about-image" alt="image-icon" /> 
             </Link>
           </li>
